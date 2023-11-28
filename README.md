@@ -16,7 +16,7 @@ This command makes multiple containers of Hadoop (1 namenode, 3 Datanodes and et
 
 Also, going to http://DockerIP:9870/ to see the namenode status.
 
-### Test the Hadoop cluster
+## Test the Hadoop cluster
 
 Let's go to the namenode container.
 ```
@@ -72,7 +72,7 @@ To shut down the cluster and remove containers, use this command:
 ```
 
 
-## TEST
+## Another Test 
 
 To deploy an example HDFS cluster, run:
 ```
@@ -88,6 +88,8 @@ Or deploy in a swarm:
 ```
 docker stack deploy -c docker-compose-v3.yml hadoop
 ```
+
+## Network of Hadoop Cluster
 
 `docker-compose` creates a docker network that can be found by running `docker network list`.
 
